@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KeyLogger</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 100px;
+        }
+        #log, #state {
+            width: 500px;
+            height: 50px;
+            border: 2px solid black;
+            text-align: center;
+            padding: 10px;
+            font-size: 20px;
+            margin-top: 20px;
+            margin-right: 5px;
+            background-color: #ffa500;
+            border-radius: 10px;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: row;
+        }
+        button {
+            font-size: 20px;
+            margin-top: 20px;
+            margin-right: 20px;
+            padding: 10px 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="border: 2px solid black; border-radius: 10px; padding: 4px">
+        KeyLogger
+      </h1>
+      <p>
+        This project demonstrates a basic keylogger using JavaScript for
+        educational purposes.
+      </p>
+      <div class="button-container">
+        <button id="start-btn">Start Logging Keypresses</button>
+        <button id="stop-btn">Stop Logging Keypresses</button>
+      </div>
+      <div class="button-container">
+        <div id="log"></div>
+        <div id="state"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
